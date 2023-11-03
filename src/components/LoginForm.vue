@@ -7,14 +7,14 @@
       </div>
       <div class="login-form">
         <h2>Iniciar sesión</h2>
-        <form @submit.prevent="login">
+        <form @submit.prevent="">
           <div class="form-group">
             <label for="username">Nombre de usuario:</label>
-            <input type="text" id="username" v-model="username" required>
+            <input type="text" id="username" required>
           </div>
           <div class="form-group">
             <label for="password">Contraseña:</label>
-            <input type="password" id="password" v-model="password" required>
+            <input type="password" id="password"  required>
           </div>
           <div class="form-group">
             <a href="/reset-password">¿Olvidaste tu contraseña?</a>

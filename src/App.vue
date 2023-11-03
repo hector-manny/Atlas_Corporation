@@ -1,7 +1,6 @@
 <template>
   <div id="app">
-    <LoginView /> <!-- Agrega el componente LoginForm aquí -->
-
+    <router-view />
     <!-- Footer -->
     <footer>
       <p>© con &hearts; 2023 Atlas Corporation. Todos los derechos reservados.</p>
@@ -10,13 +9,8 @@
 </template>
 
 <script>
-import LoginView from './views/LoginView.vue';
-
 export default {
   name: 'App',
-  components: {
-    LoginView,
-  }
 }
 </script>
 
