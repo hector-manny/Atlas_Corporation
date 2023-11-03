@@ -1,17 +1,21 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
     <LoginView /> <!-- Agrega el componente LoginForm aquí -->
+
+    <!-- Footer -->
+    <footer>
+      <p>© con &hearts; 2023 Atlas Corporation. Todos los derechos reservados.</p>
+    </footer>
   </div>
 </template>
 
 <script>
-import LoginView from './views/LoginView.vue'; // Asegúrate de importar LoginForm
+import LoginView from './views/LoginView.vue';
 
 export default {
   name: 'App',
   components: {
-    LoginView, // Añade el componente LoginForm aquí
+    LoginView,
   }
 }
 </script>
@@ -22,7 +26,15 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #fdfdfd;
   margin-top: 60px;
+  background: #fcfcff;
+}
+
+footer {
+  color: #fff;
+  margin-top: 3.4%;
+  padding: 15px;
+  background: #06086e;
 }
 </style>
